@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>eu.amidst</groupId>
-    <artifactId>moalink</artifactId>
+    <artifactId>wekalink</artifactId>
     <version>0.4.1-alpha</version>
 
     <url>http://amidst.github.io/toolbox/</url>
@@ -82,50 +82,23 @@
         </developer>
     </developers>
 
-
-
     <dependencies>
         <dependency>
             <groupId>eu.amidst</groupId>
             <artifactId>core</artifactId>
             <version>0.4.1-alpha</version>
         </dependency>
-
         <dependency>
             <groupId>nz.ac.waikato.cms.weka</groupId>
             <artifactId>weka-dev</artifactId>
             <version>3.7.12</version>
         </dependency>
-
-        <dependency>
-            <groupId>nz.ac.waikato.cms.moa</groupId>
-            <artifactId>moa</artifactId>
-            <version>2013.11</version>
-        </dependency>
-
     </dependencies>
-
-
-
-
-
+    
+    
+    
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.2.2</version>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                    <archive>
-                        <manifest>
-                            <mainClass>amidstModels</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -154,7 +127,7 @@
                 </executions>
             </plugin>
         </plugins>
-
+        
         <extensions>
             <!-- begin - needed for deploying to repository using webdav -->
             <extension>
@@ -165,4 +138,6 @@
             <!-- end - needed for deploying to repository using webdav -->
         </extensions>
     </build>
+
+
 </project>
